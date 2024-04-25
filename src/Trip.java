@@ -8,10 +8,7 @@ String destinasi;
 int hargaTrip, kuantiti;
 static private int counter =1;
 Date tanggalKeberangkatan;
-
-
 TripType jenisTrip;
-
 ArrayList<Customer> listCustomer= new ArrayList<>();
 ArrayList<String > listBookingId= new ArrayList<>();
 Trip(String destinasi, int hargaTrip, String tanggalKeberangkatan, TripType jenisTrip, int kuantiti){

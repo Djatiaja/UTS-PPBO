@@ -53,7 +53,7 @@ public class TravelAgent {
 
     public void cancelBooking(String email, Trip trip){
         for (Customer customer:trip.listCustomer){
-            if (customer.email.equals(email)){
+            if (customer.getEmail().equals(email)){
                 System.out.println("Pesanan dengan booking id " + trip.listBookingId.get(trip.listCustomer.indexOf(customer)) + " berhasil dibatalkan");
                 trip.listBookingId.remove(trip.listBookingId.indexOf(trip.listBookingId.get(trip.listCustomer.indexOf(customer))));
                 trip.listCustomer.remove(customer);
@@ -68,7 +68,7 @@ public class TravelAgent {
         boolean empty=true;
         for (Trip trip: this.listTrip){
             for (Customer customer: trip.listCustomer){
-                if (customer.email.equals(email)){
+                if (customer.getEmail().equals(email)){
                     if (empty){
                         System.out.println("Pesanan dengan email "+ email);
                     }
