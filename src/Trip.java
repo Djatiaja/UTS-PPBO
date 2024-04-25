@@ -6,7 +6,7 @@ import java.util.SimpleTimeZone;
 public class Trip {
 String destinasi;
 int hargaTrip, kuantiti;
-private int counter;
+static private int counter =1;
 Date tanggalKeberangkatan;
 
 
