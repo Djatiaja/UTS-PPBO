@@ -87,7 +87,7 @@ public class TravelAgent {
     public void getAvailableTripsByType(TripType tripType){
         int banyak =0;
         for (Trip trip:this.listTrip){
-            if (tripType.equals(trip.jenisTrip)){
+            if (tripType.equals(trip.jenisTrip) && trip.kuantiti >0){
                 banyak++;
             }
         }
@@ -97,7 +97,7 @@ public class TravelAgent {
         }
         System.out.println("Ditemukan " + banyak + " trip untuk jenis " + tripType  );
         for (Trip trip:this.listTrip){
-            if (tripType.equals(trip.jenisTrip)){
+            if (tripType.equals(trip.jenisTrip ) && trip.kuantiti >0){
                 System.out.println(trip);
             }
         }
